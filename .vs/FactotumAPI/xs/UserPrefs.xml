@@ -1,0 +1,33 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{2CFA4234-EAF3-4A0F-BDF0-5713AA483318}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumAPI Status">
+    <Files>
+      <File FileName="FactotumAPI/Controllers/MessageController.cs" Line="33" Column="50" />
+      <File FileName="FactotumAPI/Repository/FakeMessages.cs" Line="13" Column="23" />
+      <File FileName="FactotumModels/Models/MMessage.cs" Line="11" Column="24" />
+      <File FileName="FactotumAPI Status" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FactotumAPI" expanded="True">
+            <Node name="FactotumAPI" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Repository" expanded="True" />
+            </Node>
+            <Node name="FactotumModels" expanded="True">
+              <Node name="Entities" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FactotumAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
