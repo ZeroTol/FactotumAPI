@@ -1,6 +1,7 @@
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/bin/Debug/netcoreapp2.1/FactotumModels.deps.json
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/bin/Debug/netcoreapp2.1/FactotumModels.dll
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/bin/Debug/netcoreapp2.1/FactotumModels.pdb
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/obj/Debug/netcoreapp2.1/FactotumModels.csprojAssemblyReference.cache
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/obj/Debug/netcoreapp2.1/FactotumModels.csproj.CoreCompileInputs.cache
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/obj/Debug/netcoreapp2.1/FactotumModels.AssemblyInfoInputs.cache
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/obj/Debug/netcoreapp2.1/FactotumModels.AssemblyInfo.cs
