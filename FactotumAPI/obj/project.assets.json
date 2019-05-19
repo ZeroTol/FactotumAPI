@@ -4333,6 +4333,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "FactotumModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/FactotumModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FactotumModels.dll": {}
+        }
       }
     }
   },
@@ -11717,10 +11727,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "FactotumModels/1.0.0": {
+      "type": "project",
+      "path": "../FactotumModels/FactotumModels.csproj",
+      "msbuildProject": "../FactotumModels/FactotumModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "FactotumModels >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0"
@@ -11733,11 +11749,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ZeroTol/Projects/Factotum/FactotumAPI/FactotumAPI/FactotumAPI/FactotumAPI.csproj",
+      "projectUniqueName": "/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/FactotumAPI.csproj",
       "projectName": "FactotumAPI",
-      "projectPath": "/Users/ZeroTol/Projects/Factotum/FactotumAPI/FactotumAPI/FactotumAPI/FactotumAPI.csproj",
+      "projectPath": "/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/FactotumAPI.csproj",
       "packagesPath": "/Users/ZeroTol/.nuget/packages/",
-      "outputPath": "/Users/ZeroTol/Projects/Factotum/FactotumAPI/FactotumAPI/FactotumAPI/obj/",
+      "outputPath": "/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -11753,7 +11769,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/FactotumModels.csproj": {
+              "projectPath": "/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/FactotumModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
