@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/FactotumAPI
+/FactotumAPI/obj
+/FactotumModels/bin/Release/netcoreapp2.1
+/FactotumModels/obj/Release/netcoreapp2.1
+/FactotumModels/obj/FactotumModels.csproj.nuget.dgspec.json
