@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FactotumAPI.Repository;
 using FactotumModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FactotumAPI.Controllers
@@ -14,6 +15,7 @@ namespace FactotumAPI.Controllers
     {
         // GET api/message
         [HttpGet]
+        [Authorize]
         public ActionResult<IEnumerable<EMessage>> Get()
         {
             var msgs = Messages.GetMessages();

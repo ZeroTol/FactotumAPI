@@ -1,31 +1,14 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{2CFA4234-EAF3-4A0F-BDF0-5713AA483318}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumModels/Entities/EOptions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumAPI/Startup.cs">
     <Files>
-      <File FileName="FactotumAPI/Controllers/MessageController.cs" Line="38" Column="1" />
+      <File FileName="FactotumAPI/Controllers/MessageController.cs" Line="29" Column="9" />
       <File FileName="FactotumAPI/Repository/FMDataContext.cs" Line="9" Column="29" />
       <File FileName="FactotumAPI/Repository/Messages.cs" Line="25" Column="1" />
       <File FileName="FactotumModels/Entities/EUser.cs" Line="30" Column="42" />
       <File FileName="FactotumModels/Entities/EMessage.cs" Line="22" Column="1" />
       <File FileName="FactotumModels/Entities/EOptions.cs" Line="7" Column="20" />
+      <File FileName="FactotumAPI/Startup.cs" Line="37" Column="37" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="FactotumAPI" expanded="True">
-            <Node name="FactotumAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Repository" expanded="True" />
-            </Node>
-            <Node name="FactotumModels" expanded="True">
-              <Node name="Entities" expanded="True">
-                <Node name="EOptions.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.FactotumAPI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
