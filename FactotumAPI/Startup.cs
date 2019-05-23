@@ -29,16 +29,6 @@ namespace FactotumAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            var sharedKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes("mysupers3cr3tsharedkey!"));
-
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options =>
-            {
-                options.TokenValidationParameters = new TokenValidationParameters
-                {IssuerSigningKey = sharedKey,RequireSignedTokens = true,};
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +45,6 @@ namespace FactotumAPI
 
             app.UseHttpsRedirection();
             app.UseMvc();
-            app.UseAuthentication();
         }
     }
 }

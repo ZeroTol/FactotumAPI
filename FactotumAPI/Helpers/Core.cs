@@ -7,9 +7,9 @@ namespace FactotumAPI.Helpers
 {
     public class Core
     {
-        public FMDataContext dbContext = new FMDataContext();
-        public Messages MessageService { get; set; }
-        public Options Options { get; set; }
+        public FMDataContext dbContext { get; }
+        public Messages MessageService { get; }
+        public Options Options { get; }
 
         private static Core _instance;
         public static Core Instance

@@ -1,11 +1,13 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{2CFA4234-EAF3-4A0F-BDF0-5713AA483318}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumAPI/Repository/FMDataContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumAPI/Startup.cs">
     <Files>
-      <File FileName="FactotumAPI/Controllers/MessageController.cs" Line="40" Column="1" />
-      <File FileName="FactotumAPI/Helpers/Core.cs" Line="28" Column="37" />
-      <File FileName="FactotumAPI/Repository/Options.cs" Line="13" Column="9" />
+      <File FileName="FactotumAPI/Controllers/MessageController.cs" Line="28" Column="14" />
+      <File FileName="FactotumAPI/Helpers/Core.cs" Line="13" Column="1" />
+      <File FileName="FactotumAPI/Repository/Options.cs" Line="16" Column="50" />
       <File FileName="FactotumModels/Entities/EOptions.cs" Line="25" Column="51" />
-      <File FileName="FactotumAPI/Repository/FMDataContext.cs" Line="11" Column="31" />
+      <File FileName="FactotumAPI/Repository/FMDataContext.cs" Line="11" Column="30" />
+      <File FileName="FactotumAPI/Startup.cs" Line="31" Column="89" />
+      <File FileName="FactotumModels/Helpers/SecurityHelper.cs" Line="34" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,12 +16,12 @@
             <Node name="FactotumAPI" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Helpers" expanded="True" />
-              <Node name="Repository" expanded="True">
-                <Node name="FMDataContext.cs" selected="True" />
-              </Node>
+              <Node name="Repository" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
             <Node name="FactotumModels" expanded="True">
               <Node name="Entities" expanded="True" />
+              <Node name="Helpers" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
           </Node>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using FactotumAPI.Helpers;
 using FactotumAPI.Repository;
@@ -16,9 +17,16 @@ namespace FactotumAPI.Controllers
     {
         // GET api/message
         [HttpGet]
-        [Authorize]
         public ActionResult<IEnumerable<EMessage>> Get()
         {
+            var headers = Request.Headers;
+            var key = headers.FirstOrDefault(x => x.Key == "Authorization");
+            var result = SecurityHelper.Instance.CheckSecurityKey(key.Value);
+            if (result)
+            {
+                return new UnauthorizedResult();
+            }
+
             var msgs = Core.Instance.MessageService.GetMessages();
 
             var sorted = msgs.OrderByDescending((arg) => arg.Rating);
@@ -27,10 +35,10 @@ namespace FactotumAPI.Controllers
 
         // GET api/message/5
         [HttpGet("{id}")]
-        public ActionResult<MMessage> Get(int id)
+        public ActionResult<EMessage> Get(int id)
         {
             var msgs = Core.Instance.MessageService.GetMessages();
-            return new MMessage();
+            return new EMessage();
         }
 
         // GET api/message/user/5
