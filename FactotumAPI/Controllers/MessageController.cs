@@ -12,7 +12,7 @@ namespace FactotumAPI.Controllers
     [ApiController]
     public class MessageController : ControllerBase
     {
-        // GET api/values
+        // GET api/message
         [HttpGet]
         public ActionResult<IEnumerable<EMessage>> Get()
         {
@@ -22,11 +22,20 @@ namespace FactotumAPI.Controllers
             return sorted.ToArray();
         }
 
-        // GET api/values/5
+        // GET api/message/5
         [HttpGet("{id}")]
         public ActionResult<MMessage> Get(int id)
         {
             return new MMessage();
+        }
+
+        // GET api/message/user/5
+        [HttpGet("user/{id}")]
+        public ActionResult<EUser> GetUser(int id)
+        {
+            var user = Messages.GetUser(id);
+
+            return user;
         }
 
         // POST api/values

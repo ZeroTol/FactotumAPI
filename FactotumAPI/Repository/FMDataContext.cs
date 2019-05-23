@@ -7,6 +7,7 @@ namespace FactotumAPI.Repository
     public class FMDataContext : DbContext
     {
         public DbSet<EMessage> Messages { get; set; }
+        public DbSet<EUser> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

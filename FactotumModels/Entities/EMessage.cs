@@ -40,9 +40,9 @@ namespace FactotumModels
         [Display(Name = "Message User")]
         public int UserId { get; set; }
 
-        [Column(TypeName = "int")]
+        [Column(TypeName = "bit")]
         [Display(Name = "Message Removed flag")]
-        public int Removed { get; set; }
+        public bool Removed { get; set; }
 
     }
 }

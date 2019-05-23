@@ -18,5 +18,11 @@ namespace FactotumAPI.Repository
             List<EMessage> data = Messages.dbContext.Messages.ToList();
             return data.AsEnumerable();
         }
+
+        public static EUser GetUser(int id)
+        {
+            EUser user = Messages.dbContext.Users.FirstOrDefault(x => x.Id == id);
+            return user;
+        }
     }
 }
