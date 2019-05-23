@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FactotumAPI.Helpers;
 using FactotumAPI.Repository;
 using FactotumModels;
 using Microsoft.AspNetCore.Authorization;
@@ -18,7 +19,7 @@ namespace FactotumAPI.Controllers
         [Authorize]
         public ActionResult<IEnumerable<EMessage>> Get()
         {
-            var msgs = Messages.GetMessages();
+            var msgs = Core.Instance.MessageService.GetMessages();
 
             var sorted = msgs.OrderByDescending((arg) => arg.Rating);
             return sorted.ToArray();
@@ -28,6 +29,7 @@ namespace FactotumAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<MMessage> Get(int id)
         {
+            var msgs = Core.Instance.MessageService.GetMessages();
             return new MMessage();
         }
 
@@ -35,7 +37,7 @@ namespace FactotumAPI.Controllers
         [HttpGet("user/{id}")]
         public ActionResult<EUser> GetUser(int id)
         {
-            var user = Messages.GetUser(id);
+            var user = Core.Instance.MessageService.GetUser(id);
 
             return user;
         }

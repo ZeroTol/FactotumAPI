@@ -1,27 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using FactotumAPI.Helpers;
 using FactotumModels;
 
 namespace FactotumAPI.Repository
 {
     public class Messages
     {
-        static private FMDataContext dbContext = new FMDataContext();
-
-        public Messages()
+        public IEnumerable<EMessage> GetMessages()
         {
-        }
-
-        public static IEnumerable<EMessage> GetMessages()
-        {
-            List<EMessage> data = Messages.dbContext.Messages.ToList();
+            List<EMessage> data = Core.Instance.dbContext.Messages.ToList();
             return data.AsEnumerable();
         }
 
-        public static EUser GetUser(int id)
+        public EUser GetUser(int id)
         {
-            EUser user = Messages.dbContext.Users.FirstOrDefault(x => x.Id == id);
+            EUser user = Core.Instance.dbContext.Users.FirstOrDefault(x => x.Id == id);
             return user;
         }
     }

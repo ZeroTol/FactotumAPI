@@ -1,0 +1,42 @@
+﻿using System;
+using System.Linq;
+using FactotumAPI.Repository;
+using FactotumModels;
+
+namespace FactotumAPI.Helpers
+{
+    public class Core
+    {
+        public FMDataContext dbContext = new FMDataContext();
+        public Messages MessageService { get; set; }
+        public Options Options { get; set; }
+
+        private static Core _instance;
+        public static Core Instance
+        {
+            get 
+            {
+                if (_instance == null)
+                {
+                    _instance = new Core(); 
+                }
+
+                return _instance; 
+            }
+        }
+
+        protected Core()
+        {
+            dbContext = new FMDataContext();
+            var options = dbContext.Options;
+            EOptions option = null; 
+            if ((options != null) && (options.Count() > 0))
+            {
+                option = options.First();
+            }
+
+            Options = new Options(option);
+            MessageService = new Messages();
+        }
+    }
+}
