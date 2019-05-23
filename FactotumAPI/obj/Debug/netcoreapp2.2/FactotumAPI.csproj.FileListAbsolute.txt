@@ -1,0 +1,17 @@
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/bin/Debug/netcoreapp2.2/FactotumAPI.deps.json
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/bin/Debug/netcoreapp2.2/FactotumAPI.runtimeconfig.json
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/bin/Debug/netcoreapp2.2/FactotumAPI.runtimeconfig.dev.json
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/bin/Debug/netcoreapp2.2/FactotumAPI.dll
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/bin/Debug/netcoreapp2.2/FactotumAPI.pdb
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/bin/Debug/netcoreapp2.2/FactotumModels.dll
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/bin/Debug/netcoreapp2.2/FactotumModels.pdb
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.csprojAssemblyReference.cache
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.csproj.CoreCompileInputs.cache
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.RazorAssemblyInfo.cache
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.RazorAssemblyInfo.cs
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.AssemblyInfoInputs.cache
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.AssemblyInfo.cs
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.RazorTargetAssemblyInfo.cache
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.csproj.CopyComplete
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.dll
+/Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumAPI/obj/Debug/netcoreapp2.2/FactotumAPI.pdb

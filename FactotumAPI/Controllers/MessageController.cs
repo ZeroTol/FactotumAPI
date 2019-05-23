@@ -14,9 +14,10 @@ namespace FactotumAPI.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<MMessage>> Get()
+        public ActionResult<IEnumerable<EMessage>> Get()
         {
-            var msgs = FakeMessages.GetMessages();
+            var msgs = Messages.GetMessages();
+
             var sorted = msgs.OrderByDescending((arg) => arg.Rating);
             return sorted.ToArray();
         }
