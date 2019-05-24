@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FactotumAPI.Repository;
+using FactotumModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FactotumAPI.Controllers
@@ -12,9 +14,11 @@ namespace FactotumAPI.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<MMessage>> Get()
         {
-            return new string[] { "value1", "value2" };
+            var msgs = FakeMessages.GetMessages();
+
+            return msgs.ToArray();
         }
 
         // GET api/values/5

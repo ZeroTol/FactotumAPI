@@ -7,3 +7,5 @@
 /FactotumModels/bin/Release/netcoreapp2.1
 /FactotumModels/obj/Release/netcoreapp2.1
 /FactotumModels/obj/FactotumModels.csproj.nuget.dgspec.json
+/.vs
+/FactotumModels/obj/Release/netcoreapp2.2
