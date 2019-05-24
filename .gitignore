@@ -2,10 +2,32 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.vs
 /.vs/FactotumAPI
-/FactotumAPI/obj
+/.vs/FactotumModels
+
+/FactotumModels/obj
+/FactotumModels/bin
+/FactotumModels/bin/Debug/netcoreapp2.1
+/FactotumModels/obj/Debug/netcoreapp2.1
 /FactotumModels/bin/Release/netcoreapp2.1
 /FactotumModels/obj/Release/netcoreapp2.1
-/FactotumModels/obj/FactotumModels.csproj.nuget.dgspec.json
-/.vs
+/FactotumModels/bin/Debug/netcoreapp2.2
+/FactotumModels/obj/Debug/netcoreapp2.2
+/FactotumModels/bin/Release/netcoreapp2.2
 /FactotumModels/obj/Release/netcoreapp2.2
+/FactotumModels/obj/FactotumModels.csproj.nuget.dgspec.json
+
+/FactotumAPI/obj
+/FactotumAPI/bin
+/FactotumAPI/bin/Debug/netcoreapp2.1
+/FactotumAPI/obj/Debug/netcoreapp2.1
+/FactotumAPI/bin/Release/netcoreapp2.1
+/FactotumAPI/obj/Release/netcoreapp2.1
+/FactotumAPI/bin/Debug/netcoreapp2.2
+/FactotumAPI/obj/Debug/netcoreapp2.2
+/FactotumAPI/bin/Release/netcoreapp2.2
+/FactotumAPI/obj/Release/netcoreapp2.2
+/FactotumAPI/Properties/PublishProfiles
+/FactotumAPI/obj/FactotumModels.csproj.nuget.dgspec.json
+/FactotumAPI/FactotumAPI.csproj.user
