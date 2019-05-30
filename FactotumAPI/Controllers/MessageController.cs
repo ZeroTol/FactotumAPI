@@ -42,6 +42,16 @@ namespace FactotumAPI.Controllers
         }
 
         // GET api/message/user/5
+        [HttpGet("dashboardmessages")]
+        public ActionResult<IEnumerable<MDashBoardMessage>> GetDashBoardMessages()
+        {
+            //var user = Core.Instance.MessageService.GetUser(id);
+            var msgs = FakeMessages.GetDashBoardMessages();
+
+            return msgs.ToArray();
+        }
+
+        // GET api/message/user/5
         [HttpGet("user/{id}")]
         public ActionResult<EUser> GetUser(int id)
         {

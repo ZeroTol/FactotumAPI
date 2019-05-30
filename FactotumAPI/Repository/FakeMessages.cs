@@ -24,5 +24,120 @@ namespace FactotumAPI.Repository
 
             return new MMessage[] { m1, m2, m3, m4, m5, m6, m7, m8, m9 };
         }
+
+        public static IEnumerable<MDashBoardMessage> GetDashBoardMessages()
+        {
+
+                    //public int FactId { get; set; }
+
+        //public String FactTitle { get; set; }
+        //public String FactHashTags { get; set; }
+        //public String FactLink { get; set; }
+        //public DateTime FactCreateDate { get; set; }
+        //public int FactRating { get; set; }
+        var m1 = new MDashBoardMessage() {
+            FactId = 1,
+            FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+            FactLink = "lipsum.com",
+            FactHashTags = "",
+            FactCreateDate = DateTime.UtcNow,
+            FactRating = 5239122
+        };
+            var m2 = new MDashBoardMessage()
+            {
+                FactId = 2,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 5239122
+            };
+            var m3 = new MDashBoardMessage()
+            {
+                FactId = 3,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 5239122
+            };
+            var m4 = new MDashBoardMessage()
+            {
+                FactId = 4,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "#primary #primary",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 239122
+            };
+            var m5 = new MDashBoardMessage()
+            {
+                FactId = 5,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 39122
+            };
+            var m6 = new MDashBoardMessage()
+            {
+                FactId = 6,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 9122
+            };
+            var m7 = new MDashBoardMessage()
+            {
+                FactId = 7,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 7122
+            };
+            var m8 = new MDashBoardMessage()
+            {
+                FactId = 8,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam, duis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam",
+                FactLink = "lipsum.com",
+                FactHashTags = "",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 4122
+            };
+            var m9 = new MDashBoardMessage()
+            {
+                FactId = 9,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "#primary",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 2122
+            };
+            var m10 = new MDashBoardMessage()
+            {
+                FactId = 10,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "#primary",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = 122
+            };
+            var m11 = new MDashBoardMessage()
+            {
+                FactId = 11,
+                FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
+                FactLink = "lipsum.com",
+                FactHashTags = "#primary #primary",
+                FactCreateDate = DateTime.UtcNow,
+                FactRating = -122
+            };
+
+
+            return new MDashBoardMessage[] { m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11 };
+        }
+
+
     }
 }
