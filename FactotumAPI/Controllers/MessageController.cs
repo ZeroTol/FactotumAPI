@@ -7,6 +7,7 @@ using FactotumAPI.Helpers;
 using FactotumAPI.Repository;
 using FactotumModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FactotumAPI.Controllers
@@ -41,14 +42,27 @@ namespace FactotumAPI.Controllers
             return new EMessage();
         }
 
-        // GET api/message/user/5
+        // GET api/message/dashboardmessages
         [HttpGet("dashboardmessages")]
-        public ActionResult<IEnumerable<MDashBoardMessage>> GetDashBoardMessages()
+        public ActionResult<IEnumerable<MDashBoardFact>> GetDashBoardMessages()
         {
             //var user = Core.Instance.MessageService.GetUser(id);
-            var msgs = FakeMessages.GetDashBoardMessages();
+            var msgs = FakeMessages.GetDashBoardFacts();
 
             return msgs.ToArray();
+        }
+
+        // GET api/message/dashboard/byrating
+        [HttpGet("dashboard/{order}")]
+        public ActionResult<IEnumerable<EDashBoardFact>> GetDashBoardMessages(string order)
+        {
+
+            //var user = Core.Instance.MessageService.GetUser(id);
+            //var msgs = FakeMessages.GetDashBoardMessages();
+
+
+            return Core.Instance.MessageService.GetDashBoardFacts(order).ToArray();
+
         }
 
         // GET api/message/user/5
@@ -58,6 +72,14 @@ namespace FactotumAPI.Controllers
             var user = Core.Instance.MessageService.GetUser(id);
 
             return user;
+        }
+
+
+        [HttpPost]
+        [Route("AppendFact")]
+        public IActionResult AppendFact([FromBody] MDashBoardFact fact)
+        {
+            return Ok(fact);
         }
 
         // POST api/values

@@ -29,6 +29,18 @@ namespace FactotumAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //Allow access for local developemtn environment
+            //services.AddCors(c =>
+            //{
+            //    c.AddPolicy("AllowOrigin", options => options.WithOrigins(
+            //        "https://localhost:44347",
+            //        "http://localhost:44347",
+            //        "https://factotum.azurewebsites.net", 
+            //        "http://factotum.azurewebsites.net/"));
+            //});
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +56,19 @@ namespace FactotumAPI
             }
 
             app.UseHttpsRedirection();
+
+            //app.UseCors(options => options.AllowAnyOrigin());
+
+            app.UseCors(options => options.WithOrigins(
+                    "https://localhost:44347",
+                    "http://localhost:44347",
+                    "https://factotum.azurewebsites.net",
+                    "http://factotum.azurewebsites.net/")
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+            );
+
             app.UseMvc();
         }
     }

@@ -9,6 +9,7 @@ namespace FactotumAPI.Repository
         public DbSet<EMessage> Messages { get; set; }
         public DbSet<EUser> Users { get; set; }
         public DbSet<EOptions> Options { get; set; }
+        public DbSet<EDashBoardFact> DashBoardFacts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

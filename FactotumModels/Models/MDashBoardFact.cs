@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FactotumModels
 {
-    public class MDashBoardMessage
+    public class MDashBoardFact
     {
 
         public int FactId { get; set; }
@@ -15,8 +15,10 @@ namespace FactotumModels
 
         public String FactLink { get; set; }
 
-        public DateTime FactCreateDate { get; set; }
+        public DateTime? FactCreateDate { get; set; }
 
         public int FactRating { get; set; }
+
+        public DateTime? FactLastRateDate { get; set; }
     }
 }
