@@ -75,11 +75,51 @@ namespace FactotumAPI.Controllers
         }
 
 
+        // GET api/message/fakeget
+        [HttpGet("fakeget")]
+        public IActionResult FakeGet()
+        {
+            var fact_id = "1";
+
+            Core.Instance.MessageService.DislikeFact(fact_id);
+
+            //MDashBoardFact fact = new MDashBoardFact()
+            //{
+            //    FactTitle = "aaa",
+            //    FactLink = "www.google.com",
+            //    FactCreateDate = DateTime.Now,
+            //    FactHashTags = "#aaa",
+            //    FactLastRateDate = DateTime.Now,
+            //    FactRating = 1,
+            //    FactId = 1
+            //};
+            //var user = Core.Instance.MessageService.GetUser(id);
+            //var msgs = FakeMessages.GetDashBoardFacts();
+            //var fact_entity = Core.Instance.MessageService.AppendFact(fact);
+
+            return Ok(true);
+        }
+
         [HttpPost]
         [Route("AppendFact")]
         public IActionResult AppendFact([FromBody] MDashBoardFact fact)
         {
-            return Ok(fact);
+            return Ok(Core.Instance.MessageService.AppendFact(fact));
+        }
+
+        [HttpPost]
+        [Route("LikeFact")]
+        public IActionResult LikeFact([FromBody] string fact_id)
+        {
+            return Ok(Core.Instance.MessageService.LikeFact(fact_id));
+            //return Ok(fact_id);
+        }
+
+        [HttpPost]
+        [Route("DislikeFact")]
+        public IActionResult DislikeFact([FromBody] string fact_id)
+        {
+            return Ok(Core.Instance.MessageService.DislikeFact(fact_id));
         }
 
         // POST api/values
