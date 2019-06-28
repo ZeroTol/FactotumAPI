@@ -47,26 +47,22 @@ namespace FactotumAPI.Controllers
         public ActionResult<IEnumerable<MDashBoardFact>> GetDashBoardMessages()
         {
             //var user = Core.Instance.MessageService.GetUser(id);
-            var msgs = FakeMessages.GetDashBoardFacts();
+            var msgs = FakeMessages.GetDashBoardMessages();
 
             return msgs.ToArray();
         }
 
         // GET api/message/dashboard/byrating
         [HttpGet("dashboard/{order}")]
-        public ActionResult<IEnumerable<EDashBoardFact>> GetDashBoardMessages(string order)
+        public ActionResult<IEnumerable<EDashBoardFact>> GetDashBoardFacts(string order)
         {
-
-            //var user = Core.Instance.MessageService.GetUser(id);
-            //var msgs = FakeMessages.GetDashBoardMessages();
-
-
-            return Core.Instance.MessageService.GetDashBoardFacts(order).ToArray();
-
+            //TODO: Uncomment when the database will be up and running
+            //return Core.Instance.MessageService.GetDashBoardFacts(order).ToArray();
+            return FakeMessages.GetDashBoardFacts(order).ToList();
         }
 
-        // GET api/message/user/5
-        [HttpGet("user/{id}")]
+    // GET api/message/user/5
+    [HttpGet("user/{id}")]
         public ActionResult<EUser> GetUser(int id)
         {
             var user = Core.Instance.MessageService.GetUser(id);
@@ -79,39 +75,34 @@ namespace FactotumAPI.Controllers
         [HttpGet("fakeget")]
         public IActionResult FakeGet()
         {
-            var fact_id = "1";
+            //var fact_id = "1";
+            //FakeMessages.LikeFact(fact_id);
+            MDashBoardFact fact = new MDashBoardFact();
+            
+            fact.FactTitle = "What a fact";
+            fact.FactLink = "lipsum.com";
+            
+            return Ok(FakeMessages.AppendFact(fact));
 
-            Core.Instance.MessageService.DislikeFact(fact_id);
+            //Core.Instance.MessageService.DislikeFact(fact_id);
 
-            //MDashBoardFact fact = new MDashBoardFact()
-            //{
-            //    FactTitle = "aaa",
-            //    FactLink = "www.google.com",
-            //    FactCreateDate = DateTime.Now,
-            //    FactHashTags = "#aaa",
-            //    FactLastRateDate = DateTime.Now,
-            //    FactRating = 1,
-            //    FactId = 1
-            //};
-            //var user = Core.Instance.MessageService.GetUser(id);
-            //var msgs = FakeMessages.GetDashBoardFacts();
-            //var fact_entity = Core.Instance.MessageService.AppendFact(fact);
-
-            return Ok(true);
+            //return Ok(true);
         }
 
         [HttpPost]
         [Route("AppendFact")]
         public IActionResult AppendFact([FromBody] MDashBoardFact fact)
         {
-            return Ok(Core.Instance.MessageService.AppendFact(fact));
+            return Ok(FakeMessages.AppendFact(fact)); // Ok(Core.Instance.MessageService.AppendFact(fact));
         }
 
         [HttpPost]
         [Route("LikeFact")]
         public IActionResult LikeFact([FromBody] string fact_id)
         {
-            return Ok(Core.Instance.MessageService.LikeFact(fact_id));
+            FakeMessages.LikeFact(fact_id);
+            return Ok(true);
+            //return Ok(Core.Instance.MessageService.LikeFact(fact_id));
             //return Ok(fact_id);
         }
 
@@ -119,7 +110,9 @@ namespace FactotumAPI.Controllers
         [Route("DislikeFact")]
         public IActionResult DislikeFact([FromBody] string fact_id)
         {
-            return Ok(Core.Instance.MessageService.DislikeFact(fact_id));
+            FakeMessages.DislikeFact(fact_id);
+            return Ok(true);
+            //return Ok(Core.Instance.MessageService.DislikeFact(fact_id));
         }
 
         // POST api/values

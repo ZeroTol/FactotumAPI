@@ -63,7 +63,9 @@ namespace FactotumAPI
                     "https://localhost:44347",
                     "http://localhost:44347",
                     "https://factotum.azurewebsites.net",
-                    "http://factotum.azurewebsites.net/")
+                    "http://factotum.azurewebsites.net/",
+                    "https://factotumweb.azurewebsites.net",
+                    "http://factotumweb.azurewebsites.net")
                     .AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader()
