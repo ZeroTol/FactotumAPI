@@ -72,7 +72,7 @@ namespace FactotumAPI.Repository
 
         public bool LikeFact(string fact_id)
         {
-            var fact_item = Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
+            var fact_item = Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == new Guid(fact_id)/*int.Parse(fact_id)*/);
 
             fact_item.FactRating++;
             fact_item.FactLastRateDate = DateTime.Now;
@@ -87,7 +87,7 @@ namespace FactotumAPI.Repository
 
         public bool DislikeFact(string fact_id)
         {
-            var fact_item = Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
+            var fact_item = Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == new Guid(fact_id)/*int.Parse(fact_id)*/);
 
             fact_item.FactRating--;
             fact_item.FactLastRateDate = DateTime.Now;

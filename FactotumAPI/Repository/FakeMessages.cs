@@ -28,7 +28,7 @@ namespace FactotumAPI.Repository
         {
             var m1 = new MDashBoardFact()
             {
-                FactId = 1,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -37,7 +37,7 @@ namespace FactotumAPI.Repository
             };
             var m2 = new MDashBoardFact()
             {
-                FactId = 2,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -46,7 +46,7 @@ namespace FactotumAPI.Repository
             };
             var m3 = new MDashBoardFact()
             {
-                FactId = 3,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -55,7 +55,7 @@ namespace FactotumAPI.Repository
             };
             var m4 = new MDashBoardFact()
             {
-                FactId = 4,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary #primary",
@@ -64,7 +64,7 @@ namespace FactotumAPI.Repository
             };
             var m5 = new MDashBoardFact()
             {
-                FactId = 5,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -73,7 +73,7 @@ namespace FactotumAPI.Repository
             };
             var m6 = new MDashBoardFact()
             {
-                FactId = 6,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -82,7 +82,7 @@ namespace FactotumAPI.Repository
             };
             var m7 = new MDashBoardFact()
             {
-                FactId = 7,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -91,7 +91,7 @@ namespace FactotumAPI.Repository
             };
             var m8 = new MDashBoardFact()
             {
-                FactId = 8,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam, duis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -100,7 +100,7 @@ namespace FactotumAPI.Repository
             };
             var m9 = new MDashBoardFact()
             {
-                FactId = 9,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -109,7 +109,7 @@ namespace FactotumAPI.Repository
             };
             var m10 = new MDashBoardFact()
             {
-                FactId = 10,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -118,7 +118,7 @@ namespace FactotumAPI.Repository
             };
             var m11 = new MDashBoardFact()
             {
-                FactId = 11,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary #primary",
@@ -138,7 +138,7 @@ namespace FactotumAPI.Repository
             // create fact collection for further use
             var f1 = new EDashBoardFact()
             {
-                FactId = 1,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -148,7 +148,7 @@ namespace FactotumAPI.Repository
             };
             var f2 = new EDashBoardFact()
             {
-                FactId = 2,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -158,7 +158,7 @@ namespace FactotumAPI.Repository
             };
             var f3 = new EDashBoardFact()
             {
-                FactId = 3,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -168,7 +168,7 @@ namespace FactotumAPI.Repository
             };
             var f4 = new EDashBoardFact()
             {
-                FactId = 4,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary #primary",
@@ -178,7 +178,7 @@ namespace FactotumAPI.Repository
             };
             var f5 = new EDashBoardFact()
             {
-                FactId = 5,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -188,7 +188,7 @@ namespace FactotumAPI.Repository
             };
             var f6 = new EDashBoardFact()
             {
-                FactId = 6,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -198,7 +198,7 @@ namespace FactotumAPI.Repository
             };
             var f7 = new EDashBoardFact()
             {
-                FactId = 7,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -208,7 +208,7 @@ namespace FactotumAPI.Repository
             };
             var f8 = new EDashBoardFact()
             {
-                FactId = 8,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam, duis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam",
                 FactLink = "lipsum.com",
                 FactHashTags = "",
@@ -218,7 +218,7 @@ namespace FactotumAPI.Repository
             };
             var f9 = new EDashBoardFact()
             {
-                FactId = 9,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -228,7 +228,7 @@ namespace FactotumAPI.Repository
             };
             var f10 = new EDashBoardFact()
             {
-                FactId = 10,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -238,7 +238,7 @@ namespace FactotumAPI.Repository
             };
             var f11 = new EDashBoardFact()
             {
-                FactId = 11,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary #primary",
@@ -248,7 +248,7 @@ namespace FactotumAPI.Repository
             };
             var f12 = new EDashBoardFact()
             {
-                FactId = 12,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -258,7 +258,7 @@ namespace FactotumAPI.Repository
             };
             var f13 = new EDashBoardFact()
             {
-                FactId = 13,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -268,7 +268,7 @@ namespace FactotumAPI.Repository
             };
             var f14 = new EDashBoardFact()
             {
-                FactId = 14,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -278,7 +278,7 @@ namespace FactotumAPI.Repository
             };
             var f15 = new EDashBoardFact()
             {
-                FactId = 15,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -288,7 +288,7 @@ namespace FactotumAPI.Repository
             };
             var f16 = new EDashBoardFact()
             {
-                FactId = 9,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -298,7 +298,7 @@ namespace FactotumAPI.Repository
             };
             var f17 = new EDashBoardFact()
             {
-                FactId = 9,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -308,7 +308,7 @@ namespace FactotumAPI.Repository
             };
             var f18 = new EDashBoardFact()
             {
-                FactId = 18,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -318,7 +318,7 @@ namespace FactotumAPI.Repository
             };
             var f19 = new EDashBoardFact()
             {
-                FactId = 19,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -328,7 +328,7 @@ namespace FactotumAPI.Repository
             };
             var f20 = new EDashBoardFact()
             {
-                FactId = 20,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -338,7 +338,7 @@ namespace FactotumAPI.Repository
             };
             var f21 = new EDashBoardFact()
             {
-                FactId = 21,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -348,7 +348,7 @@ namespace FactotumAPI.Repository
             };
             var f22 = new EDashBoardFact()
             {
-                FactId = 22,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -358,7 +358,7 @@ namespace FactotumAPI.Repository
             };
             var f23 = new EDashBoardFact()
             {
-                FactId = 23,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -368,7 +368,8 @@ namespace FactotumAPI.Repository
             };
             var f24 = new EDashBoardFact()
             {
-                FactId = 24,
+                FactId = Guid.NewGuid(),
+                
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -378,7 +379,7 @@ namespace FactotumAPI.Repository
             };
             var f25 = new EDashBoardFact()
             {
-                FactId = 25,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -388,7 +389,7 @@ namespace FactotumAPI.Repository
             };
             var f26 = new EDashBoardFact()
             {
-                FactId = 26,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -398,7 +399,7 @@ namespace FactotumAPI.Repository
             };
             var f27 = new EDashBoardFact()
             {
-                FactId = 9,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -408,7 +409,7 @@ namespace FactotumAPI.Repository
             };
             var f28 = new EDashBoardFact()
             {
-                FactId = 28,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -418,7 +419,7 @@ namespace FactotumAPI.Repository
             };
             var f29 = new EDashBoardFact()
             {
-                FactId = 29,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -428,7 +429,7 @@ namespace FactotumAPI.Repository
             };
             var f30 = new EDashBoardFact()
             {
-                FactId = 30,
+                FactId = Guid.NewGuid(),
                 FactTitle = "Ruis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.",
                 FactLink = "lipsum.com",
                 FactHashTags = "#primary",
@@ -464,7 +465,7 @@ namespace FactotumAPI.Repository
 
         public static bool LikeFact(string fact_id)
         {
-            var fact_item = FactCollection.FirstOrDefault(i => i.FactId == int.Parse(fact_id));//Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
+            var fact_item = FactCollection.FirstOrDefault(i => i.FactId == new Guid(fact_id)/*int.Parse(fact_id)*/);//Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
 
             fact_item.FactRating++;
             fact_item.FactLastRateDate = DateTime.Now;
@@ -475,7 +476,7 @@ namespace FactotumAPI.Repository
 
         public static bool DislikeFact(string fact_id)
         {
-            var fact_item = FactCollection.FirstOrDefault(i => i.FactId == int.Parse(fact_id));//Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
+            var fact_item = FactCollection.FirstOrDefault(i => i.FactId == new Guid(fact_id)/*int.Parse(fact_id)*/);//Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
 
             fact_item.FactRating--;
             fact_item.FactLastRateDate = DateTime.Now;

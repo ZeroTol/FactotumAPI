@@ -7,3 +7,17 @@
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/bin/Debug/netcoreapp2.2/FactotumModels.pdb
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/obj/Debug/netcoreapp2.2/FactotumModels.dll
 /Users/ZeroTol/Documents/Work/Projects/Factotum/FactotumAPI/FactotumModels/obj/Debug/netcoreapp2.2/FactotumModels.pdb
+D:\GitCode\FactotumAPI\FactotumModels\bin\Debug\netcoreapp2.2\FactotumModels.deps.json
+D:\GitCode\FactotumAPI\FactotumModels\bin\Debug\netcoreapp2.2\FactotumModels.dll
+D:\GitCode\FactotumAPI\FactotumModels\bin\Debug\netcoreapp2.2\FactotumModels.pdb
+D:\GitCode\FactotumAPI\FactotumModels\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\GitCode\FactotumAPI\FactotumModels\bin\Debug\netcoreapp2.2\System.Text.Encodings.Web.dll
+D:\GitCode\FactotumAPI\FactotumModels\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\GitCode\FactotumAPI\FactotumModels\bin\Debug\netcoreapp2.2\System.Text.Encodings.Web.xml
+D:\GitCode\FactotumAPI\FactotumModels\obj\Debug\netcoreapp2.2\FactotumModels.csprojAssemblyReference.cache
+D:\GitCode\FactotumAPI\FactotumModels\obj\Debug\netcoreapp2.2\FactotumModels.csproj.CoreCompileInputs.cache
+D:\GitCode\FactotumAPI\FactotumModels\obj\Debug\netcoreapp2.2\FactotumModels.AssemblyInfoInputs.cache
+D:\GitCode\FactotumAPI\FactotumModels\obj\Debug\netcoreapp2.2\FactotumModels.AssemblyInfo.cs
+D:\GitCode\FactotumAPI\FactotumModels\obj\Debug\netcoreapp2.2\FactotumModels.csproj.CopyComplete
+D:\GitCode\FactotumAPI\FactotumModels\obj\Debug\netcoreapp2.2\FactotumModels.dll
+D:\GitCode\FactotumAPI\FactotumModels\obj\Debug\netcoreapp2.2\FactotumModels.pdb

@@ -13,17 +13,33 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using FactotumModels.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace FactotumAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(/*IConfiguration configuration*/IHostingEnvironment env)
         {
-            Configuration = configuration;
+            Configuration = env;
+
+
+            // Set up configuration sources.
+            var builder = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+
+
+            using (var db = new FtDbContext())
+            {
+                db.Database.EnsureCreated();
+                db.Database.Migrate();
+            }
+
         }
 
-        public IConfiguration Configuration { get; }
+        public IHostingEnvironment Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -41,6 +57,8 @@ namespace FactotumAPI
             //});
 
             services.AddCors();
+
+            services.AddEntityFrameworkSqlite().AddDbContext<FtDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
