@@ -2,25 +2,41 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-FactotumAPI-3D5CCBE0-EA49-49B0-A098-BB170E4790A7</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-    <Folder Include="Repository\" />
-    <Folder Include="Intefaces\" />
-    <Folder Include="Helpers\" />
+    <Compile Remove="Data\Migrations\20190713071918_CrateEDashBoadFact.cs" />
+    <Compile Remove="Data\Migrations\20190713071918_CrateEDashBoadFact.Designer.cs" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\EDashBoardFacts\Create.cshtml" />
+    <None Include="Views\EDashBoardFacts\Delete.cshtml" />
+    <None Include="Views\EDashBoardFacts\Details.cshtml" />
+    <None Include="Views\EDashBoardFacts\Edit.cshtml" />
+    <None Include="Views\EDashBoardFacts\Index.cshtml" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
   </ItemGroup>
+
 
   <ItemGroup>
     <ProjectReference Include="..\FactotumModels\FactotumModels.csproj" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
 </Project>

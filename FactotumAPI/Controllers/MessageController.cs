@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FactotumModels;
-using FactotumModels.Context;
 using FactotumAPI.Repository;
 using FactotumAPI.Helpers;
+using FactotumAPI.Data;
 
 namespace FactotumAPI.Controllers
 {
@@ -16,9 +16,9 @@ namespace FactotumAPI.Controllers
     [ApiController]
     public class MessageController : ControllerBase
     {
-        private readonly FtDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public MessageController(FtDbContext context)
+        public MessageController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -35,28 +35,9 @@ namespace FactotumAPI.Controllers
                 return new UnauthorizedResult();
             }
 
-            var msgs = Core.Instance.MessageService.GetMessages();
-
-            var sorted = msgs.OrderByDescending((arg) => arg.Rating);
-            return sorted.ToArray();
-        }
-
-        // GET api/message/5
-        [HttpGet("{id}")]
-        public ActionResult<EMessage> Get(int id)
-        {
-            var msgs = Core.Instance.MessageService.GetMessages();
-            return new EMessage();
-        }
-
-        // GET api/message/dashboardmessages
-        [HttpGet("dashboardmessages")]
-        public ActionResult<IEnumerable<MDashBoardFact>> GetDashBoardMessages()
-        {
-            //var user = Core.Instance.MessageService.GetUser(id);
-            var msgs = FakeMessages.GetDashBoardMessages();
-
-            return msgs.ToArray();
+            //var msgs = Core.Instance.MessageService.GetMessages();
+            //var sorted = msgs.OrderByDescending((arg) => arg.Rating);
+            return Ok(true);//sorted.ToArray();
         }
 
         // GET api/message/dashboard/byrating
@@ -81,54 +62,6 @@ namespace FactotumAPI.Controllers
             }
 
             //return await _context.Dashboard.ToListAsync();// FakeMessages.GetDashBoardFacts(order).ToList();
-        }
-
-        // GET api/message/user/5
-        [HttpGet("user/{id}")]
-        public ActionResult<EUser> GetUser(int id)
-        {
-            var user = Core.Instance.MessageService.GetUser(id);
-
-            return user;
-        }
-
-
-        // GET api/message/fakeget
-        [HttpGet("fakeget")]
-        public async Task<ActionResult<IEnumerable<EDashBoardFact>>> FakeGet()
-        {
-            //List<EMessage> data = Core.Instance.dbContext.Messages.ToList();
-            //return data.AsEnumerable();
-
-            //List<EDashBoardFact> data = Core.Instance.ftDbContext.Dashboard.ToList();
-
-            EDashBoardFact eDashBoardFact = new EDashBoardFact()
-            {
-                //FactId = 0,
-                FactCreateDate = DateTime.Now,
-                FactTitle = "what a fact",
-                FactLink = "lipsum.com",
-                FactRating = 0,
-                FactHashTags = "#waf",
-            };
-
-            _context.Dashboard.Add(eDashBoardFact);
-            await _context.SaveChangesAsync();
-
-            //var fact_id = "1";
-            //FakeMessages.LikeFact(fact_id);
-            //MDashBoardFact fact = new MDashBoardFact();
-
-            //fact.FactTitle = "What a fact";
-            //fact.FactLink = "lipsum.com";
-
-
-            //return Ok(FakeMessages.AppendFact(fact));
-            return Ok(await _context.Dashboard.ToListAsync());
-
-            //Core.Instance.MessageService.DislikeFact(fact_id);
-
-            //return Ok(true);
         }
 
         [HttpPost]
@@ -159,7 +92,7 @@ namespace FactotumAPI.Controllers
         public IActionResult LikeFact([FromBody] string fact_id)
         {
             //FakeMessages.LikeFact(fact_id);
-            var fact_item = _context.Dashboard.FirstOrDefault(i => i.FactId == new Guid(fact_id)/*int.Parse(fact_id)*/);//Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
+            var fact_item = _context.Dashboard.FirstOrDefault(i => i.FactId == new Guid(fact_id)/*int.Parse(fact_id)*/);//Core.Instance.dbContext.Dashboard.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
 
             fact_item.FactRating++;
             fact_item.FactLastRateDate = DateTime.Now;
@@ -176,7 +109,7 @@ namespace FactotumAPI.Controllers
         [Route("DislikeFact")]
         public IActionResult DislikeFact([FromBody] string fact_id)
         {
-            var fact_item = _context.Dashboard.FirstOrDefault(i => i.FactId == new Guid(fact_id)/*int.Parse(fact_id)*/);//Core.Instance.dbContext.DashBoardFacts.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
+            var fact_item = _context.Dashboard.FirstOrDefault(i => i.FactId == new Guid(fact_id)/*int.Parse(fact_id)*/);//Core.Instance.dbContext.Dashboard.FirstOrDefault(i => i.FactId == int.Parse(fact_id));
 
             fact_item.FactRating--;
             fact_item.FactLastRateDate = DateTime.Now;
@@ -186,24 +119,6 @@ namespace FactotumAPI.Controllers
             //FakeMessages.DislikeFact(fact_id);
             return Ok(true);
             //return Ok(Core.Instance.MessageService.DislikeFact(fact_id));
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }
