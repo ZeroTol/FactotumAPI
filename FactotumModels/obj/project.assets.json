@@ -4038,11 +4038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\clear\\FactotumAPI\\FactotumModels\\FactotumModels.csproj",
+      "projectUniqueName": "D:\\GitCode\\FactotumAPI\\FactotumModels\\FactotumModels.csproj",
       "projectName": "FactotumModels",
-      "projectPath": "D:\\clear\\FactotumAPI\\FactotumModels\\FactotumModels.csproj",
+      "projectPath": "D:\\GitCode\\FactotumAPI\\FactotumModels\\FactotumModels.csproj",
       "packagesPath": "C:\\Users\\Dmitr\\.nuget\\packages\\",
-      "outputPath": "D:\\clear\\FactotumAPI\\FactotumModels\\obj\\",
+      "outputPath": "D:\\GitCode\\FactotumAPI\\FactotumModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

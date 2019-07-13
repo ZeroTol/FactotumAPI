@@ -13301,11 +13301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\clear\\FactotumAPI\\FactotumAPI\\FactotumAPI.csproj",
+      "projectUniqueName": "D:\\GitCode\\FactotumAPI\\FactotumAPI\\FactotumAPI.csproj",
       "projectName": "FactotumAPI",
-      "projectPath": "D:\\clear\\FactotumAPI\\FactotumAPI\\FactotumAPI.csproj",
+      "projectPath": "D:\\GitCode\\FactotumAPI\\FactotumAPI\\FactotumAPI.csproj",
       "packagesPath": "C:\\Users\\Dmitr\\.nuget\\packages\\",
-      "outputPath": "D:\\clear\\FactotumAPI\\FactotumAPI\\obj\\",
+      "outputPath": "D:\\GitCode\\FactotumAPI\\FactotumAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13324,8 +13324,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\clear\\FactotumAPI\\FactotumModels\\FactotumModels.csproj": {
-              "projectPath": "D:\\clear\\FactotumAPI\\FactotumModels\\FactotumModels.csproj"
+            "D:\\GitCode\\FactotumAPI\\FactotumModels\\FactotumModels.csproj": {
+              "projectPath": "D:\\GitCode\\FactotumAPI\\FactotumModels\\FactotumModels.csproj"
             }
           }
         }
