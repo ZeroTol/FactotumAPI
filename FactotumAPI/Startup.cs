@@ -71,6 +71,18 @@ namespace FactotumAPI
 
             app.UseAuthentication();
 
+            app.UseCors(options => options.WithOrigins(
+                    "https://localhost:44347",
+                    "http://localhost:44347",
+                    "https://factotum.azurewebsites.net",
+                    "http://factotum.azurewebsites.net/",
+                    "https://factotumweb.azurewebsites.net",
+                    "http://factotumweb.azurewebsites.net")
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+            );
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
