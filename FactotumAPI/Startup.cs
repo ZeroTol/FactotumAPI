@@ -39,13 +39,12 @@ namespace FactotumAPI
             //    options.UseSqlServer(
             //        Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddEntityFrameworkSqlite()
-                    .AddDbContext<ApplicationDbContext>();
+            services.AddEntityFrameworkSqlite().AddDbContext<ApplicationDbContext>();
 
             services.AddDefaultIdentity<IdentityUser>()
-                    .AddRoles<IdentityRole>()
-                    .AddDefaultUI(UIFramework.Bootstrap4)
-                    .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddRoles<IdentityRole>()
+                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
