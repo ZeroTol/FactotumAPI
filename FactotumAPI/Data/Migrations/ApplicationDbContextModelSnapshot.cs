@@ -43,6 +43,33 @@ namespace FactotumAPI.Data.Migrations
                     b.ToTable("Dashboard");
                 });
 
+            modelBuilder.Entity("FactotumModels.ETempDashBoardFact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("FactCreateDate");
+
+                    b.Property<string>("FactHashTags")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<Guid>("FactId");
+
+                    b.Property<DateTime?>("FactLastRateDate");
+
+                    b.Property<string>("FactLink")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int>("FactRating");
+
+                    b.Property<string>("FactTitle")
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TempDashboard");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")

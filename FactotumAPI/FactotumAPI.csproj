@@ -9,6 +9,8 @@
   <ItemGroup>
     <Compile Remove="Data\Migrations\20190713071918_CrateEDashBoadFact.cs" />
     <Compile Remove="Data\Migrations\20190713071918_CrateEDashBoadFact.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190715192711_CreateEDashBoardFact.cs" />
+    <Compile Remove="Data\Migrations\20190715192711_CreateEDashBoardFact.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

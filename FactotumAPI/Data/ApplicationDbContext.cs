@@ -11,6 +11,7 @@ namespace FactotumAPI.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public DbSet<EDashBoardFact> Dashboard { get; set; }
+        public DbSet<ETempDashBoardFact> TempDashboard { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

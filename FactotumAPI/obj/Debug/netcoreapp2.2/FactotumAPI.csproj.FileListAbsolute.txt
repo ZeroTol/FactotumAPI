@@ -22,6 +22,12 @@ D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\EDashBoar
 D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\EDashBoardFacts\Details.g.cshtml.cs
 D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\EDashBoardFacts\Edit.g.cshtml.cs
 D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\EDashBoardFacts\Index.g.cshtml.cs
+D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\ETempDashBoardFacts\Approve.g.cshtml.cs
+D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\ETempDashBoardFacts\Create.g.cshtml.cs
+D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\ETempDashBoardFacts\Delete.g.cshtml.cs
+D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\ETempDashBoardFacts\Details.g.cshtml.cs
+D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\ETempDashBoardFacts\Edit.g.cshtml.cs
+D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\ETempDashBoardFacts\Index.g.cshtml.cs
 D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 D:\GitCode\FactotumAPI\FactotumAPI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
