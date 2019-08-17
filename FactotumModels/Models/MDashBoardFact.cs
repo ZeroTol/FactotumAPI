@@ -15,5 +15,7 @@ namespace FactotumModels
         public String FactHashTags { get; set; }
         public String FactLink { get; set; }
         public DateTime? FactLastRateDate { get; set; }
+
+        public String Link { get; set; }
     }
 }

@@ -1,12 +1,12 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{10285250-5BB6-4493-8932-A9BB8BF51488}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumAPI/appsettings.Development.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumAPI/Startup.cs">
     <Files>
       <File FileName="FactotumAPI/Controllers/MessageController.cs" Line="67" Column="10" />
       <File FileName="FactotumAPI/Repository/Options.cs" />
       <File FileName="FactotumModels/Entities/EOptions.cs" />
-      <File FileName="FactotumAPI/Startup.cs" Line="87" Column="38" />
+      <File FileName="FactotumAPI/Startup.cs" Line="11" Column="32" />
       <File FileName="FactotumModels/Helpers/SecurityHelper.cs" />
-      <File FileName="FactotumAPI/Properties/launchSettings.json" />
+      <File FileName="FactotumAPI/Properties/launchSettings.json" Line="10" Column="3" />
       <File FileName="FactotumAPI/Controllers/HomeController.cs" />
       <File FileName="FactotumAPI/Controllers/EDashBoardFactsController.cs" />
       <File FileName="FactotumAPI/Repository/FakeMessages.cs" Line="14" Column="94" />
@@ -27,12 +27,7 @@
                   <Node name="jquery-validation-unobtrusive" expanded="True" />
                 </Node>
               </Node>
-              <Node name="appsettings.Development.json" selected="True" />
-            </Node>
-            <Node name="FactotumModels" expanded="True">
-              <Node name="Entities" expanded="True" />
-              <Node name="Helpers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
