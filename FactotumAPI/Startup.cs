@@ -18,6 +18,13 @@ namespace FactotumAPI
 {
     public class Startup
     {
+        const string baseURL = "http://localhost:44347";
+        const string baseURLssl = "https://localhost:44347";
+        const string baseURLremote = "http://factotum.azurewebsites.net";
+        const string baseURLremotessl = "https://factotum.azurewebsites.net";
+        const string baseURLaddotoanal = "http://factotumweb.azurewebsites.net";
+        const string baseURLaddotoanalssl = "https://factotumweb.azurewebsites.net";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -71,12 +78,12 @@ namespace FactotumAPI
             app.UseAuthentication();
 
             app.UseCors(options => options.WithOrigins(
-                    "https://localhost:44347",
-                    "http://localhost:44347",
-                    "https://factotum.azurewebsites.net",
-                    "http://factotum.azurewebsites.net/",
-                    "https://factotumweb.azurewebsites.net",
-                    "http://factotumweb.azurewebsites.net")
+                    baseURL,
+                    baseURLssl,
+                    baseURLremote,
+                    baseURLremotessl,
+                    baseURLaddotoanal,
+                    baseURLaddotoanalssl)
                     .AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader()

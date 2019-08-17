@@ -4032,30 +4032,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dmitr\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/ZeroTol/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitCode\\FactotumAPI\\FactotumModels\\FactotumModels.csproj",
+      "projectUniqueName": "/Volumes/Transdent/Works/Factotum/FactotumAPI/FactotumModels/FactotumModels.csproj",
       "projectName": "FactotumModels",
-      "projectPath": "D:\\GitCode\\FactotumAPI\\FactotumModels\\FactotumModels.csproj",
-      "packagesPath": "C:\\Users\\Dmitr\\.nuget\\packages\\",
-      "outputPath": "D:\\GitCode\\FactotumAPI\\FactotumModels\\obj\\",
+      "projectPath": "/Volumes/Transdent/Works/Factotum/FactotumAPI/FactotumModels/FactotumModels.csproj",
+      "packagesPath": "/Users/ZeroTol/.nuget/packages/",
+      "outputPath": "/Volumes/Transdent/Works/Factotum/FactotumAPI/FactotumModels/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/ZeroTol/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
