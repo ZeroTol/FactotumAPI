@@ -12,11 +12,12 @@ namespace FactotumAPI.Data
     {
         public DbSet<EDashBoardFact> Dashboard { get; set; }
         public DbSet<ETempDashBoardFact> TempDashboard { get; set; }
-
+        
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var connectionStringBuilder = new SqliteConnectionStringBuilder {

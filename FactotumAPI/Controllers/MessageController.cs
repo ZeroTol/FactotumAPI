@@ -12,6 +12,57 @@ using FactotumAPI.Data;
 
 namespace FactotumAPI.Controllers
 {
+    [Route("api/Register")]
+    [ApiController]
+    public class RootController : ControllerBase
+    {
+        private readonly ApplicationDbContext _context;
+
+        public RootController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET api
+        [HttpGet]
+        public ActionResult<IEnumerable<EMessage>> Get()
+        {
+            var headers = Request.Headers;
+            var key = headers.FirstOrDefault(x => x.Key == "Authorization");
+            var result = SecurityHelper.Instance.CheckSecurityKey(key.Value);
+            if (result)
+            {
+                return new UnauthorizedResult();
+            }
+
+            //var msgs = Core.Instance.MessageService.GetMessages();
+            //var sorted = msgs.OrderByDescending((arg) => arg.Rating);
+            return Ok(true);//sorted.ToArray();
+        }
+
+        [HttpPost]
+        [Route("Register")]
+        public async Task<IActionResult> RegisterAsync([FromBody] MRegister data)
+        {
+            await _context.SaveChangesAsync();
+
+            return Ok(true);
+
+            //return Ok(FakeMessages.AppendFact(fact)); // Ok(Core.Instance.MessageService.AppendFact(fact));
+        }
+
+        [HttpGet]
+        [Route("Login")]
+        public async Task<IActionResult> Login()
+        {
+            await _context.SaveChangesAsync();
+
+            return Ok(true);
+
+            //return Ok(FakeMessages.AppendFact(fact)); // Ok(Core.Instance.MessageService.AppendFact(fact));
+        }
+    }
+
     [Route("api/[controller]")]
     [ApiController]
     public class MessageController : ControllerBase

@@ -1,33 +1,45 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{10285250-5BB6-4493-8932-A9BB8BF51488}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumAPI/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FactotumAPI/Controllers/HomeController.cs">
     <Files>
-      <File FileName="FactotumAPI/Controllers/MessageController.cs" Line="67" Column="10" />
-      <File FileName="FactotumAPI/Repository/Options.cs" />
-      <File FileName="FactotumModels/Entities/EOptions.cs" />
-      <File FileName="FactotumAPI/Startup.cs" Line="11" Column="32" />
-      <File FileName="FactotumModels/Helpers/SecurityHelper.cs" />
-      <File FileName="FactotumAPI/Properties/launchSettings.json" Line="10" Column="3" />
-      <File FileName="FactotumAPI/Controllers/HomeController.cs" />
-      <File FileName="FactotumAPI/Controllers/EDashBoardFactsController.cs" />
-      <File FileName="FactotumAPI/Repository/FakeMessages.cs" Line="14" Column="94" />
-      <File FileName="FactotumAPI/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" Line="7" Column="1" />
-      <File FileName="FactotumAPI/appsettings.json" Line="1" Column="1" />
-      <File FileName="FactotumAPI/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="FactotumAPI/Controllers/MessageController.cs" Line="47" Column="10" />
+      <File FileName="FactotumAPI/Startup.cs" />
+      <File FileName="FactotumAPI/Controllers/HomeController.cs" Line="23" Column="42" />
+      <File FileName="FactotumModels/Models/MDashBoardFact.cs" />
+      <File FileName="FactotumModels/Models/MRegister.cs" />
+      <File FileName="FactotumModels/Models/MUser.cs" />
+      <File FileName="FactotumAPI/Data/ApplicationDbContext.cs" Line="15" Column="9" />
+      <File FileName="FactotumModels/Entities/EDashBoardFact.cs" Line="1" Column="14" />
+      <File FileName="FactotumModels/Entities/EUser.cs" Line="59" Column="1" />
+      <File FileName="FactotumModels/Entities/EMessage.cs" Line="25" Column="50" />
+      <File FileName="FactotumModels/Entities/ETempDashBoardFact.cs" Line="24" Column="45" />
+      <File FileName="FactotumAPI/Controllers/EDashBoardFactsController.cs" Line="41" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FactotumAPI" expanded="True">
             <Node name="FactotumAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Repository" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="lib" expanded="True">
-                  <Node name="jquery-validation-unobtrusive" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True" />
                 </Node>
               </Node>
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True">
+                <Node name="Migrations" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="FactotumModels" expanded="True">
+              <Node name="Entities" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -39,7 +51,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
+      <Breakpoint file="/Volumes/Transdent/Works/Factotum/FactotumAPI/FactotumAPI/Controllers/MessageController.cs" relfile="FactotumAPI/Controllers/MessageController.cs" line="81" column="1" />
       <Breakpoint file="/Volumes/Transdent/Works/Factotum/FactotumAPI/FactotumAPI/Controllers/MessageController.cs" relfile="FactotumAPI/Controllers/MessageController.cs" line="30" column="1" />
+      <Breakpoint file="/Volumes/Transdent/Works/Factotum/FactotumAPI/FactotumAPI/Controllers/MessageController.cs" relfile="FactotumAPI/Controllers/MessageController.cs" line="58" column="1" />
+      <Breakpoint file="/Volumes/Transdent/Works/Factotum/FactotumAPI/FactotumAPI/Controllers/MessageController.cs" relfile="FactotumAPI/Controllers/MessageController.cs" line="47" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
