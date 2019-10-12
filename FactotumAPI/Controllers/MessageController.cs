@@ -12,7 +12,7 @@ using FactotumAPI.Data;
 
 namespace FactotumAPI.Controllers
 {
-    [Route("api/Register")]
+    [Route("api")]
     [ApiController]
     public class RootController : ControllerBase
     {

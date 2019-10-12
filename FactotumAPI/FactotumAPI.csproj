@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <UserSecretsId>aspnet-FactotumAPI-3D5CCBE0-EA49-49B0-A098-BB170E4790A7</UserSecretsId>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <StartupObject>FactotumAPI.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
