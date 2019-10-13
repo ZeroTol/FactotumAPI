@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FactotumAPI.Data;
 using FactotumModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FactotumAPI.Controllers
 {
+    [Authorize]
     public class ETempDashBoardFactsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -39,7 +38,25 @@ namespace FactotumAPI.Controllers
                 return NotFound();
             }
 
-            return View(eTempDashBoardFact);
+            var eDashBoardFact = new EDashBoardFact()
+            {
+                FactCreateDate = eTempDashBoardFact.FactCreateDate,
+                FactHashTags = eTempDashBoardFact.FactHashTags,
+                FactLastRateDate = eTempDashBoardFact.FactLastRateDate,
+                FactLink = eTempDashBoardFact.FactLink,
+                FactRating = eTempDashBoardFact.FactRating,
+                FactTitle = eTempDashBoardFact.FactTitle,
+                FactId = eTempDashBoardFact.FactId,
+                Id = 0
+            };
+
+            _context.Dashboard.Add(eDashBoardFact);
+
+            _context.TempDashboard.Remove(eTempDashBoardFact);
+
+            _context.SaveChanges();
+
+            return View(eDashBoardFact);
         }
 
         // GET: ETempDashBoardFacts/Details/5

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using FactotumAPI.Models;
 using FactotumAPI.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FactotumAPI.Controllers
 {
@@ -33,6 +34,7 @@ namespace FactotumAPI.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult CreateSimpleUser()
         {
             var user = new IdentityUser

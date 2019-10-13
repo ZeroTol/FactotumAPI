@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FactotumAPI.Data;
 using FactotumModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FactotumAPI.Controllers
 {
+    [Authorize]
     public class EDashBoardFactsController : Controller
     {
         private readonly ApplicationDbContext _context;

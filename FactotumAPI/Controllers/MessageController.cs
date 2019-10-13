@@ -119,7 +119,7 @@ namespace FactotumAPI.Controllers
         [Route("AppendFact")]
         public async Task<IActionResult> AppendFactAsync([FromBody] MDashBoardFact fact)
         {
-            EDashBoardFact eDashBoardFact = new EDashBoardFact()
+            ETempDashBoardFact eTempDashBoardFact = new ETempDashBoardFact()
             {
                 //FactId = 0,
                 FactCreateDate = DateTime.Now,
@@ -130,7 +130,7 @@ namespace FactotumAPI.Controllers
                 FactId = fact.FactId
             };
 
-            _context.Dashboard.Add(eDashBoardFact);
+            _context.TempDashboard.Add(eTempDashBoardFact);
             await _context.SaveChangesAsync();
 
             return Ok(true);

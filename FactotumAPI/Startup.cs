@@ -46,12 +46,13 @@ namespace FactotumAPI
             //    options.UseSqlServer(
             //        Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddEntityFrameworkSqlite().AddDbContext<ApplicationDbContext>();
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddRoles<IdentityRole>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddEntityFrameworkSqlite().AddDbContext<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -108,6 +109,26 @@ namespace FactotumAPI
                 using (var context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>())
                 {
                     context.Database.Migrate();
+
+                    // SPECIAL USER FOR MOST FIRST LOGIN
+                    var user = new IdentityUser
+                    {
+                        UserName = "A11C398B-0B6E-42E5-B1CA-9C521A1BEBDA@factotum.com",
+                        Email = "A11C398B-0B6E-42E5-B1CA-9C521A1BEBDA@factotum.com"
+                    };
+
+                    using (var _userManager = serviceScope.ServiceProvider.GetService<UserManager<IdentityUser>>())
+                    {
+                        try
+                        {
+                            var result = _userManager.CreateAsync(user, "P@ssword1").Result;
+                        }
+                        catch (Exception)
+                        {
+
+                            throw;
+                        }
+                    }
                 }
             }
         }
