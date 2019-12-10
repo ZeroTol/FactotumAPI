@@ -47,7 +47,6 @@ namespace FactotumAPI.Controllers
                 FactRating = eTempDashBoardFact.FactRating,
                 FactTitle = eTempDashBoardFact.FactTitle,
                 FactId = eTempDashBoardFact.FactId,
-                Id = 0
             };
 
             _context.Dashboard.Add(eDashBoardFact);
